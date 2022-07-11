@@ -13,8 +13,8 @@ public class C04_doWhileLoop {
         int sayi=0;
 
         //while ile yapalim
-        //Loolarda kullanacagimiz variable lari looptan once olusturmaliyiz!!
-        //while loop da loop dan oonce olusturdugumuz bu variable a atayacsagimiz
+        //Looplarda kullanacagimiz variable lari looptan once olusturmaliyiz!!
+        //while loop da loop dan once olusturdugumuz bu variable a atayacagimiz
         // degeri iyi dusunmemiz gerekiyor
 
 

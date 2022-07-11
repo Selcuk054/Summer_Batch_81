@@ -2,7 +2,7 @@ package day17_nestedForLoop;
 
 import java.util.Scanner;
 
-public class C09_whileLoop {
+public class C09_whileLoopSifre {
     /*  Soru 6) Kullanicidan bir sifre girmesini isteyin.
                 Asagidaki sartlari sagliyorsa “Sifre basari ile tanimlandi”,
         sartlari saglamazsa “Islem basarisiz,Lutfen yeni bir sifre girin” yazdirin
