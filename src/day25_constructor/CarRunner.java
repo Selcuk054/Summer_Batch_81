@@ -1,4 +1,4 @@
-package day25_constructer;
+package day25_constructor;
 
 public class CarRunner {
     public static void main(String[] args) {
@@ -19,8 +19,8 @@ public class CarRunner {
         /*
         Herhangi bir obje uzerinden variable yazdirmaya calistigimizda Java degeri su siralama ile arar.
         1- O obje olusturulduktan sonra bir deger atandi mi ?
-        2- Objenin olusturuldugu class da vrarable a bir deger  atanmis mi bakar
-        3- `Ozaman data durune gore Jav adefault degeri atar.
+        2- Objenin olusturuldugu class da variable a bir deger  atanmis mi bakar.
+        3- `Ozaman data durune gore Java default degeri atar.
          */
     }
 

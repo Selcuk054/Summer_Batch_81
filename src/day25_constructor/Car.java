@@ -1,4 +1,4 @@
-package day25_constructer;
+package day25_constructor;
 
 public class Car {
     /*
@@ -11,7 +11,7 @@ public class Car {
     String marka="Marka belirtilmadi";
     String model="Model belirilmedi";
     int yil;
-    int fiyat;
+    public int fiyat;
 
     public void benzinliArac(){
         System.out.println("Bu arac benzinli motora sahiptir");

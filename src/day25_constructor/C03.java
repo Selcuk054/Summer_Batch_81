@@ -1,9 +1,9 @@
-package day25_constructer;
+package day25_constructor;
 
 public class C03 {
     /*
     proje olustururken bazi classlardan run etmek icin degil
-    variable ve ,ethod olusturup
+    variable ve method olusturup
     bunlari baska class lardan kullanmak icin kullanilir
      */
     /*
@@ -11,7 +11,7 @@ public class C03 {
     bile ihtiyac oldugunda calisir.
 
      Class icerisinde parametreli veya parametresiz herhangi bir
-     contructo olusturursak java default constructor u siler.
+     contructor olusturursak java default constructor u siler.
 
      */
 
@@ -21,7 +21,7 @@ public class C03 {
 
       }
 /*
-olusturdugumuz parametresi z bu constructor defoult constructor
+olusturdugumuz parametresiz bu constructor defoult constructor
 ile birebir aynidir. Ama biz olusturdugumuz icin buna default contractur demeyiz
 parametresiz contructor deriz.
  */

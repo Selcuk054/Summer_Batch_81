@@ -1,4 +1,4 @@
-package day25_constructer;
+package day25_constructor;
 
 public class C04_Constructor {
     public static void main(String[] args) {
