@@ -1,4 +1,4 @@
-package day_30_immutable_date;
+package day30_immutable_date;
 
 public class C02_StringHavuzu {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package day_30_immutable_date;
+package day30_immutable_date;
 
 import java.time.LocalTime;
 
