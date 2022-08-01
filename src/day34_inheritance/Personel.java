@@ -3,8 +3,8 @@ package day34_inheritance;
 public class Personel {
     /*
     eger parent class olacak sekilde tasarladiginiz bir class varsa
-    veya ilerde bu class i parent class yapmak isteyenler olabili diyorsaniz
-    variable ve methodlarin access modifier ini protected
+    veya ilerde bu class i parent class yapmak isteyenler olabilir diyorsaniz
+    variable ve methodlarin access modifier ini protected yapariz
      */
 
     int persNo;

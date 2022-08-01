@@ -5,7 +5,7 @@ public class Isci extends Personel {
     /*
     Normal hayatimizda parent cocuk sahibi olmaya karar verebilir.
     Javada ise child class lar ozelliklerini inherit etmek
-    istedikleri class i kendilerine parent ediirler
+    istedikleri class i kendilerine parent ediirler.
 
     Mesela isci class ini olusturunca nelere ihityaci var diye dusunsek personel class indaki tum
     variable ve methodlara ihtiyaci oldugunu gorebiliriz.
