@@ -42,6 +42,8 @@ public class C03_Exceptions {
             System.out.println("Girdiginiz sira listemizde bulunmuyor"+
                     "\n Sira numarasi en fazla 5 olabilir");
         }
+        // Iki hatayi tek try catch in icinde kullanmak mantikli degildir cunku herbirinin hatasi kendine ozgudur,
+
 
     }
 }

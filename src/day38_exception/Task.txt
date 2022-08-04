@@ -1,0 +1,25 @@
+&&&&&& Bu dersin Ozeti &&&&&&
+
+1- Exception Java da ortaya cikmasi muhtemel isnisna lar dir.
+2- Java nerede ne yapacagini bilir. Eger Javanin istedigi gibi kod yazmazsa Java Compile Time Error(CTE) verir,
+ve bunu altini kirmiziya cizerek gosterir. Ancak syntax acisindan hersey normal olsa da Javanin cozemeyecegi
+durumlar ortaya cikar bu durmda Java calismayi durdurur (stop execution) ve durumu bize rapor etmek icin kirmizi yazilar yazar.
+3- Javanin verdigi hata mesajinda;
+   a- Hatanin hangi satirda oldugu,
+   b- Hatanin kaynagi
+   c- Exception turu yazilidir.
+4- Eger biz kodumuzu yazarken sorun olmasi muhtemel noktalari ongorebiliyorsak, Java ya boyle bir exception
+ile karsilastiginda ne yapmasini istedigimizi soyleyebiliriz.
+5- Biz eger Java nin exception ile karsilastiginda calismaya devam etmesini istiyorsak o zaman exception
+olusturmasi muhtemel alan kod blogunu try-catch ile cevreleyebiliriz.
+6- Try Body si exception olusturmasi ongorulen kodlari icerir.
+7- Catch den sonra yazilan() bekledigimiz exception un turunu ve exception olusursa atama yapacagimiz objeyi icerir(e).
+8-Catch body si ise exception yapildiginda yapilacak islemi icerir.
+9- Catch body sinde hata raporu vermek istiyorsak biz sout ile yazdirabilecegimz gibi, exception uzerinden store
+ettigimiz 3 objesi uzerindenhazir hata mesajlarini kullanabiliriz. E objesini kullanarak hat raporu yazdirdigimizda ekranda
+yine kirmizi yazilar gorururuz ama bu kodun durdugu icin degil biz yazdirmak istedigimiz icin olur. Eger istemezsek kirmizi
+yazilarin hicbirini yazdirmasak da olur.
+10- Try blogu tek basina KULLANILMAZ, try blogunun yanina catch blok(lari) ve/veya finally blogu kullanilmalidir.
+
+
+

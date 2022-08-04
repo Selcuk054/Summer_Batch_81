@@ -8,14 +8,22 @@ public class C04_Exception_Odev {
 
 
     String[] urunler={"Nutella","Cokokrem","Sut","Cay","Findik"};
-    Scanner scan = new Scanner(System.in);
-        System.out.println("Istediginiz urunun sira nosunu giriniz");
-    int istenenSira= scan.nextInt();
 
-    while(istenenSira<0 || istenenSira>5){
-        System.out.println("Lutfen 1 ile 5 arasinda bir deger giriniz");break;
+    Scanner scan;
+
+    int istenenSira=0;
+    boolean kontrol=true;
+
+    while(kontrol){
+        try {
+            scan= new Scanner(System.in);
+            System.out.println("Istediginiz urunun sira nosunu giriniz");
+            istenenSira= scan.nextInt();
+            kontrol=false;
+        }catch (InputMismatchException e){
+            System.out.println("Urun indexi icin bir tam sayi girmeniz gerekli");
         }
-
+        }
 
         System.out.println("Program calismaya devam ediyor");
         try {

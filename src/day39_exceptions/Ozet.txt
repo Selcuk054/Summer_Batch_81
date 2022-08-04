@@ -1,0 +1,15 @@
+1- Eger yazdigimiz exception birden fazla exception olusturma ihtimali tasiyorsa,
+bu durumda birden fazla try catch kullanabiliriz.
+2- Exception in kaynagi kodun farkli sasatirlari ise, o satirlari ayri ayri handle edebiliriz;
+3- Ama ayni kod blogu birden fazla exception ihtimali iceriyorsa, ic ice try catch bloklari,
+bir try birden fazla catch olusturabiliriz, muhtemel exceptionlari kapsayan tek nir exception
+varsa o yazilabilir.
+4- Olusacak exception lari birbiri ile parent child iliskisine sahipse child uste,
+parent altta yazilmalidir. bu bir tercih degil mecburilyettir.
+5- Eger parent yukarida child asagida olursa , Java CTE verir, cunku asagidaki
+child exception, ulasilmaz konumda olacaktir.
+6- Eger compile time exceptionu handle etmek degilde sadece java daki kirmizi cizgileri
+kaldirmak isterseniz,
+method signatur ina throws keyword ile olusabilecek exception class isimlerini yazabiliriz.
+7- Egeer kodun herhangi bir satirinda, bir exception throw etmek istersek
+throw new ExceptionIsmi kullanabiliriz.
