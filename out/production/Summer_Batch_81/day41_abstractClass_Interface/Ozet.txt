@@ -1,0 +1,12 @@
+Abstract Class Ozet (BUNLARI BILMEMIZ YETER SIMDILIK)
+1- Bir classi abstract yapip yapmamaya bastan karar veririz. Eger bir class dan obje olustrumayacaksak,
+o class i child class'larinin uymasi gereken kurallari belirleyecek sekilde diyazn etmek istiyorsak, abstract
+class yapariz
+2- Abstract bir classda child class larin mutlaka uymasi gerekn kurallari abstract methodlar ile belirleriz.
+ Abstract methodlar mutlaka child class da override edebilecegi body ye ihtiyac duymaz.
+3- Abstract olarak tanimlanan methodlarin body si olmaz.
+4- Abstract class zincirinden sonra gelen ilk concrete class, parentlarinda bulunan ve concrete olmayan tum methodlari
+override etmek zorundadir ancak parent abstract classlarda bulunan concrete methodlari override etmek zorunda degildir
+5-Abstract bir class in abstract child i parent daki abstract methodlari override etmek zorunda degildir.
+6-Abstract classlar constructor a sahiptir fakat obje olusturulamaz.
+

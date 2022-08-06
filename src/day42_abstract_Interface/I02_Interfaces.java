@@ -32,6 +32,9 @@ public interface I02_Interfaces {
 
 
      */
+    int SAYI=30;
+
+    String ISIM="Yildiz Kolaji";
 
 
 
