@@ -12,10 +12,12 @@ public class Araba {
 
 
     public void setModel(String model) {
+
         this.model = model;
     }
 
     public String getYakit() {
+
         return yakit;
     }
 }
