@@ -1,0 +1,9 @@
+1- Map , gercek projelerdeki data base sistemine en uygun java objesidir.
+2- Maplerde ayni ozelliklere sahip ve ozellikleri ayni bizimde tektiplestirilmis datalar saklayabiliriz
+3- tektiplestirme sonradan datalara ulasabilmek icin onemli
+4- Map e ekleyecegimiz tum ozellikler 2 parcadan (key/value) olusmalidir.
+Key ve value icin data turu sinirlamasi yoktur, istedigimiz data turunu secebiliriz.
+5- Map olustururken key ve value nun datat turune karar vermis olmamiz ve bunu deklare etmemiz gerekir.
+6- Map de tum islemler key uzerinden yapilir, bundan dolayi key degerleri unique olmalidir.
+7- Bir firmada calistiginizda map kullaniliyorsa Map in Data yapisi hep ayni olacaktir. Bizden istenen herhangi bir gorevi yaparken
+gorevi bagimsiz methodlarda kurgulamak ilerde yapacagimiz gorevlerde kolaylik saglayacaktir.
