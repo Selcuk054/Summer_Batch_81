@@ -37,6 +37,8 @@ public class Fp01 {
             tekElemanlarinKareleriniYazdirFunctional(list);
             System.out.println();
             tekElementlerinKupleriniYazdirFunctional(list);
+            System.out.println();
+            tekrarsizCiftElementlerinKreleriToplami(list);
 
 
     }
@@ -88,8 +90,17 @@ public class Fp01 {
     public static void tekElementlerinKupleriniYazdirFunctional(List <Integer> kupList){
 
             kupList.stream().distinct().filter(t->t%2!=0).map(t->t*t*t).forEach(t-> System.out.print(t+" "));
-                    //distinct() tekrar edenleri alma methodu
+                    //distinct() tekrar edenleri almama methodu
     }
+    //5) Tekrarsız çift elementlerin karelerinin toplamını hesaplayan bir method oluşturun.
+
+    public static void tekrarsizCiftElementlerinKreleriToplami (List<Integer> list){
+           Integer toplam = list.stream().distinct().filter(t->t%2==0).map(t->t*t).reduce(0,(t,u)->t+u);
+                    //reduce() dusurme azaltma
+        System.out.println(toplam);
+    }
+
+
 
 
 
