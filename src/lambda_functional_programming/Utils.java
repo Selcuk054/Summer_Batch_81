@@ -20,4 +20,19 @@ public class Utils {
     public static int kupunuAl(int x){
         return x*x*x;
     }
+    public static double yarisiniAl(int x){
+
+        return x/2.0;
+    }
+
+    public static char sonKarakteriAl(String str){
+
+        return str.charAt(str.length()-1);
+    }
+
+    public static char ilkKarakteriAl(String str){
+
+        return str.charAt(0);
+    }
+
 }

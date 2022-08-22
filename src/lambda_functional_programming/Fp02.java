@@ -1,7 +1,9 @@
 package lambda_functional_programming;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Fp02 {
     /*
@@ -33,6 +35,14 @@ public class Fp02 {
         tekElemanlarinKareleriniYazdir(list);
         System.out.println();
         tekrarsizTekElemanlarinKupunuAl(list);
+        tekrarsizCiftElemanlarinKareleriToplami(list);
+        tekrarsizCiftElemanlarinKareToplami02(list);
+        tekrarsizCiftElemanlarinKareToplami03(list);
+        tekrarsizCiftElemanlarinKupleriniCarpimi(list);
+        getMaxEleman(list);
+        yedidenBuyukCiftMin(list);
+        terSiralamaylaTekrarsizElemanlarinYarisi(list);
+        getMinEleman(list);
 
     }
     //1) Ardışık list elemanlarını aynı satırda aralarında boşluk bırakarak yazdıran bir
@@ -61,6 +71,82 @@ public class Fp02 {
     public static void tekrarsizTekElemanlarinKupunuAl(List<Integer>list){
 
         list.stream().distinct().filter(Utils::tekElemaniSec).map(Utils::kupunuAl).forEach(Utils::ayniSatirdaBosluklaYazdir);
+    }
+    //5) Tekrarsız çift elemanların karelerinin toplamını hesaplayan bir method oluşturun.
+    //1. Yol
+    public static void tekrarsizCiftElemanlarinKareleriToplami(List<Integer> list){
+
+        Integer toplam = list.stream().distinct().filter(Utils::ciftElemaniSec).map(Utils::karesiniAl).reduce(0, Math::addExact);
+        System.out.println(toplam);
+        //addExact methodu toplama yapacak buraya kadar eleyerek gelen sayilari topluyor.
+        //Reduce un icinde baslangic degeri yazark da olur yada sonuna get() methodu ekleyerek de calistirebilriz.
+
+    }
+    //2. Yol
+    public static void tekrarsizCiftElemanlarinKareToplami02(List<Integer> list){
+
+        Integer toplam = list.stream().distinct().filter(Utils::ciftElemaniSec).map(Utils::karesiniAl).reduce(Math::addExact).get();
+        System.out.println(toplam);
+
+    }
+
+    //3. Yol
+    public static void tekrarsizCiftElemanlarinKareToplami03(List<Integer> list){
+
+        Integer toplam = list.stream().distinct().filter(Utils::ciftElemaniSec).map(Utils::karesiniAl).reduce(0,Integer::sum);
+        System.out.println(toplam);
+        //Integer class in icin de sum class da buraya geln sayilari toplar.
+
+    }
+
+        //6) Tekrarsız çift elemanların küpünün çarpımını hesaplayan bir method oluşturun.
+
+    public static void  tekrarsizCiftElemanlarinKupleriniCarpimi(List<Integer> list){
+
+        Integer carpim = list.stream().distinct().filter(Utils::ciftElemaniSec).map(Utils::kupunuAl).reduce(1,Math::multiplyExact);
+        System.out.println(carpim);
+        //multyplyExact --> buraya gelen degerleri carpan method
+    }
+
+        //7) List elemanları arasından en büyük değeri bulan bir method oluşturun.
+
+    public static void getMaxEleman(List<Integer> list){
+
+        Integer max = list.stream().distinct().reduce(Math::max).get();
+
+        System.out.println(max);
+
+    }
+    //Ödev
+    //8)List elemanları arasından en küçük değeri bulan bir method oluşturun.(Method Reference)
+
+    public static void getMinEleman(List<Integer> list){
+
+        Integer minimum=list.stream().distinct().reduce(Math::min).get();
+        System.out.println("Minimum Sayi :"+minimum);
+
+    }
+
+        //9) List elemanları arasından 7'den büyük, çift, en küçük değeri bulan bir method oluşturun.
+
+    public static void yedidenBuyukCiftMin(List<Integer> list){
+
+        Integer min =list.stream().distinct().filter(t->t>7).filter(Utils::ciftElemaniSec).reduce(Math::min).get();
+        System.out.println(min);
+    }
+
+    //10) Ters sıralama ile tekrarsız ve 5'ten büyük elemanların yarı değerlerini
+    // (elamanın ikiye bölüm sonucunu) bulan bir method oluşturun.
+    public static void terSiralamaylaTekrarsizElemanlarinYarisi(List<Integer> list){
+        List<Double> sonuc = list.
+                stream().//Gerekli methodları kullanmamızı sağlar
+                        distinct().//Tekarlı olanları almaz
+                        filter(t-> t>5).//Koşula göre filtreleme yapar
+                        map(Utils::yarisiniAl).//Her bir elemanın değerini değiştirmeye yarar
+                        sorted(Comparator.reverseOrder()).//Sıralama yapar
+                        collect(Collectors.toList());//Elamanları collection'a çevirir.
+        System.out.println(sonuc);
+
     }
 
 
